@@ -1,0 +1,185 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{MANISHANKAR B}{}{DATA SCIENTIST}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushleft
+\begin{center}
+    \roundpic{mani.png}
+\end{center}
+
+\bg{cvgreen}{white}{About me}\\[0.5em]
+
+{\footnotesize
+I am a data science graduate with a solid foundation in python and data manipulation. My academic journey has equipped me with skills in data cleaning, exploratory data analysis, and business intelligence report. I possess strong problem solving and critical thinking abilities that enable me to turn data into actionable insights efficiently, i am eager to apply my analytical skills in real-world scenarios. }
+\bigskip
+
+\bg{cvgreen}{white}{personal} \\[0.5em]
+MANISHANKAR B
+
+Coimbatore,
+
++916380997247
+
+\bigskip
+
+\bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
+
+\begin{itemize}
+  \setlength{\leftmargin}{0pt} % Adjust the left margin
+  \item Expert in Python
+  \item Data Manipulation and Analysis
+  \item Business Intelligence and Reporting
+  \item Storytelling with Data
+\end{itemize}
+
+\bigskip
+
+
+
+\vspace{4em}
+
+\infobubble{\faEnvelopeO}{cvgreen}{white}{\href{mailto:manishankarb06@gmail.com}{gmail}}
+\infobubble{\faLinkedin}{cvgreen}{white}{\href{https://www.linkedin.com/in/manishankar-b-bb77ba28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app}{linkedin}}
+\infobubble{\faFacebook}{cvgreen}{white}{\href{https://www.facebook.com/share/1FvH2XHX5P/}{Facebook}}
+
+
+\infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/Manishankar-01}{Github}}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Internships}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{Dec-Jan,2025}{Digital Marketing}{Company}{Atoinfinity pvt ltd\color{cvred}}{A digital marketing internship offers hands-on experience in online marketing activities such as social media management, content creation, SEO, email marketing, and data analysis. It helps interns gain practical skills and knowledge of digital tools and strategies used to promote brands online.}{a2.jpeg} \\
+    
+    \cvevent{April-May,2024}{Web Development}{Company}{Edutantr \color{cvred}}{A web development internship offers practical experience in creating and maintaining websites or web apps. Interns work with coding languages like HTML, CSS, and JavaScript, helping with design, development, and troubleshooting tasks. It builds technical skills and real-world project exposure.}{edu.jpeg}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Education}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2019-21}{Adhyayana public school}{10th}{Coimbatore \color{headerblue}}{}{adhya.jpeg} \\
+    \cvdegree{2021-23}{Jayam Foundation}{12th}{Coimbatore \color{headerblue}}{}{jayam.jpeg} \\
+    \cvdegree{2023-26}{Krishna adhitiya college}{Bsc DS}{Coimbatore \color{headerblue}}{}{adhtiya.jpeg}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Programming}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{SQL}&  \barrule{0.55}{0.5em}{cvgreen}\\
+     \bg{skilllabelcolour}{iconcolour}{Python}& \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{R}& \barrule{0.5}{0.5em}{cvorange}\\
+     \bg{skilllabelcolour}{iconcolour}{PowerBI}& \barrule{0.45}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{HTML}& \barrule{0.5}{0.5em}{cvorange}\\
+\end{tabular}
+\end{minipage}
+
+\section*{Journals}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+ \cvevent{Mar,2025}{AI Food Maker}{Source}{ Sri Krishna Adithya College\color{cvred}}{AI is making food manufacturing smarter, safer, and more efficient.. AI helps reduce waste, improve quality, and personalize nutrition, while also supporting smarter, faster production..}{do.jpg} \\
+ \cvevent{April,2024}{Usage of AI in E-commerce}{Source}{Sri Krishna Adithya College \color{cvred}}{The journal explains that AI helps e-commerce by personalizing recommendations, segmenting customers, and adjusting prices in real time to boost sales and improve customer experience.}{doi.jpg} \\
+\end{tabular}
+
+\begin{minipage}[t]{0.3\textwidth}
+
+
+\section*{Languages}
+\begin{tabular}{l | ll}
+\textbf{Tamil}& C2 & {\phantom{x}\footnotesize mother tongue} \\
+\textbf{English}& C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny}\\
+\textbf{Hindi}& C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+\textbf{Malayalam}& C2 & \pictofraction{\faCircle}{cvgreen}{2}{black!30}{2}{\tiny}\end{tabular}
+\bigskip
+\section*{strenghts}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+    skills& Efficiency boost in Analysis,Team Leaderships and Enhanced Decision Making.\end{tabular}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Certificates}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    Nov,2024& \emph{GOOGLE Data Analysis}, certified in COURSERA.\\
+    Dec,2024&  \emph{IBM Data Analytics and Data science},IBM Learing.\\
+ Jan,2025&\emph{Python developer},Certified in COURSERA\\
+ Feb,2025&\emph{Excel and PowerBI},online platforms\\
+ Mar,2025&\emph{Various domain expertise},Certified in DEEP LEARNING\\\end{tabular}
+\bigskip
+\end{minipage}
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
